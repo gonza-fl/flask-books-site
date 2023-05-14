@@ -1,0 +1,11 @@
+{% include 'admin/header.html' %}
+
+<div class="p-5 mb-4 bg-light rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Hola <strong>{{session['user']}}</strong> </h1>
+    <p class="col-md-8 fs-4">Aquí podra administrar los libros del sitio web</p>
+    <a class="btn btn-primary btn-lg" href="/admin/books">Empezar la gestión</a>
+  </div>
+</div>
+
+{% include 'admin/footer.html' %}
